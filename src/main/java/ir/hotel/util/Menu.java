@@ -2,13 +2,11 @@ package ir.hotel.util;
 
 import ir.hotel.entity.Customer;
 import ir.hotel.repository.ServiceDecorator;
-import ir.hotel.service.BaseService;
+import ir.hotel.service.NullService;
 import ir.hotel.service.Conference;
 import ir.hotel.service.Dinner;
 import ir.hotel.service.Room;
-import org.w3c.dom.Node;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.*;
 
@@ -78,23 +76,23 @@ public class Menu {
                 break;
 
             case 1:
-                customer.setServiceDecorator(new Room(new BaseService()));
+                customer.setServiceDecorator(new Room(new NullService()));
                 System.out.println("Done!");
-                serviceDecoratorList.add(new Room(new BaseService()));
+                serviceDecoratorList.add(new Room(new NullService()));
                 addService();
                 break;
 
             case 2:
-                customer.setServiceDecorator(new Conference(new BaseService()));
+                customer.setServiceDecorator(new Conference(new NullService()));
                 System.out.println("Done!");
-                serviceDecoratorList.add(new Conference(new BaseService()));
+                serviceDecoratorList.add(new Conference(new NullService()));
                 addService();
                 break;
 
             case 3:
-                customer.setServiceDecorator(new Dinner(new BaseService()));
+                customer.setServiceDecorator(new Dinner(new NullService()));
                 System.out.println("Done!");
-                serviceDecoratorList.add(new Dinner(new BaseService()));
+                serviceDecoratorList.add(new Dinner(new NullService()));
                 addService();
                 break;
 
