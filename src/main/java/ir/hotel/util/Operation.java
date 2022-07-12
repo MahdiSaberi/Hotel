@@ -2,12 +2,9 @@ package ir.hotel.util;
 
 import ir.hotel.entity.Customer;
 import ir.hotel.repository.ServiceDecorator;
-import ir.hotel.service.Room;
 
 import java.io.*;
 import java.nio.file.Files;
-import java.util.List;
-import java.util.Scanner;
 import java.util.Set;
 
 public class Operation {

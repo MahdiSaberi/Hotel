@@ -2,10 +2,10 @@ package ir.hotel.util;
 
 import ir.hotel.entity.Customer;
 import ir.hotel.repository.ServiceDecorator;
-import ir.hotel.service.NullService;
-import ir.hotel.service.Conference;
-import ir.hotel.service.Dinner;
-import ir.hotel.service.Room;
+import ir.hotel.service.entity.NullService;
+import ir.hotel.service.entity.Conference;
+import ir.hotel.service.entity.Dinner;
+import ir.hotel.service.entity.Room;
 
 import java.io.IOException;
 import java.util.*;

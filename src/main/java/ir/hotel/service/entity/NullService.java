@@ -1,4 +1,4 @@
-package ir.hotel.service;
+package ir.hotel.service.entity;
 
 import ir.hotel.repository.ServiceDecorator;
 
